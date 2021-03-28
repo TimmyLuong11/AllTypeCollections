@@ -14,13 +14,11 @@ namespace ArrayCollection
 
             //Output to the user to enter in the couse subject and adding the input to an array
             Console.WriteLine("Please enter in a course subject:");
-            answer = Console.ReadLine();
-            courseName[0] = answer;
-            for (int i = 1; i < courseName.Length; i++)
+            courseName[0] = Console.ReadLine();
+            for (int i = 0; i < courseName.Length; i++)
             {
-                courseName[i] = answer;
                 Console.WriteLine("Please enter in the next course subject:");
-                answer = Console.ReadLine();
+                courseName[i] = Console.ReadLine();
             }
 
             //Output to the user to enter in the couse number and adding the input to an array
